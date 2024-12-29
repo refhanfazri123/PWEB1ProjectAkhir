@@ -1,0 +1,58 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.div1 {
+  margin-left: 15px;
+  display: flex;
+  gap: 635px;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-weight: bold;
+}
+.dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+.main {
+  display: flex;
+  padding: 10px;
+  gap: 50px;
+}
+.konten2 {
+  width: 1000px;
+}
+.card {
+  margin: 0px;
+}
+.card-img-top {
+  padding: 10px;
+}
+.footer {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

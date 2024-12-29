@@ -1,0 +1,276 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  margin: 0;
+}
+/* NAVBAR */
+nav.container-navbar {
+  background: url(Gambar/BackgroundNavbar.jpg);
+  background-size: 100% 100%;
+  padding-top: 20px;
+  padding-bottom: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  scroll-behavior: smooth;
+}
+nav .ul-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+nav ul .li-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav ul .li-container:hover {
+  background: darkblue;
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.1s;
+  border-radius: 3px;
+}
+nav ul li .a-container {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  nav.container-navbar {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  nav .ul-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  nav ul .li-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  nav ul li .a-container {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+  }
+}
+
+/* JUMBOTRON */
+div#jumbotron {
+  background-color: honeydew;
+  padding: 80px 0px 200px 0px;
+}
+div header.watermark {
+  color: darkblue;
+  padding-top: 70px;
+  margin-left: 250px;
+}
+div header h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+div p.informasi-singkat {
+  color: darkblue;
+  margin: 0px 250px 0px 250px;
+  text-align: justify;
+  font-style: italic;
+  font-size: small;
+}
+div article.jumbotron {
+  margin: 40px 250px 70px 250px;
+}
+div article figure.photo-profil {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+div article figure img.gambar-refhan {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px darkblue;
+}
+div article figure figcaption.caption {
+  color: darkblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* RESPONSIVE JUMBOTRON */
+@media (max-width: 768px) {
+  div header.watermark {
+    margin-left: 20px;
+    text-align: center;
+  }
+  div p.informasi-singkat {
+    margin: 0 20px;
+    font-size: small;
+  }
+  div article.jumbotron {
+    margin: 20px;
+  }
+  div article figure.photo-profil {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  div article figure img.gambar-refhan {
+    width: 50%;
+  }
+}
+
+/* SECTION TENTANG SAYA */
+section#tentangSaya {
+  background-color: skyblue;
+  padding: 100px 0px 200px 0px;
+  align-items: center;
+  text-align: center;
+}
+section h2.tentangSaya {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+section div.biografi {
+  margin: 30px 250px 30px 250px;
+  text-align: justify;
+}
+section table.pendidikan {
+  justify-self: center;
+  text-align: center;
+  width: 45%;
+}
+section table thead th h5.subjudul {
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;
+}
+section table tbody tr td {
+  padding-bottom: 10px;
+}
+
+/* RESPONSIVE SECTION TENTANG SAYA */
+@media (max-width: 768px) {
+  section div.biografi {
+    margin: 10px;
+    text-align: left;
+  }
+  section table.pendidikan {
+    width: 90%;
+  }
+}
+
+/* SECTION PROJECT */
+section#project {
+  background-color: honeydew;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0px 200px 0px;
+}
+section h2.project {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+section div div div.card {
+  box-shadow: 1px 1px 20px darkblue;
+}
+/* END SECTION PROJECT */
+
+/* SECTION KONTAK */
+section#kontak {
+  background-color: skyblue;
+  padding: 100px 0px 200px 0px;
+  align-items: center;
+  text-align: center;
+}
+section h2.kontak {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+section div.container-kontak {
+  padding: 20px 350px 20px 350px;
+}
+section div form.kontak {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+section div form input,
+textarea {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+section div form button {
+  background-color: #5cb85c;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+section div form button:hover {
+  background-color: #4cae4c;
+}
+section article.container-sosmed {
+  display: flex;
+  gap: 2rem;
+  justify-self: center;
+  margin: 10px 500px 10px 500px;
+}
+section article a.kontak {
+  margin: 0px 15px 0px 15px;
+}
+section article a.kontak:hover {
+  filter: drop-shadow(1px 1px 20px darkblue);
+}
+
+/* RESPONSIVE SECTION KONTAK */
+@media (max-width: 768px) {
+  section div.container-kontak {
+    padding: 10px;
+  }
+  section div form.kontak {
+    font-size: 14px;
+  }
+  section div form input,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+  }
+  section article.container-sosmed {
+    margin: 10px;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  section article a.kontak {
+    margin: 10px 0;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: darkblue;
+  color: white;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 768px) {
+  footer h5 {
+    font-size: 14px;
+    padding: 15px;
+  }
+}

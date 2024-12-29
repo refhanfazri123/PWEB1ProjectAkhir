@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portofolio</title>
+    <link rel="icon" href="Gambar/refhan fazri handianto.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="container-navbar">
+      <ul class="ul-container">
+        <li class="li-container"><a href="#jumbotron" class="a-container">BERANDA</a></li>
+        <li class="li-container"><a href="#tentangSaya" class="a-container">TENTANG SAYA</a></li>
+        <li class="li-container"><a href="#project" class="a-container">PORTOFOLIO</a></li>
+        <li class="li-container"><a href="#kontak" class="a-container">KONTAK</a></li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- JUMBOTRON -->
+    <div id="jumbotron">
+      <header class="watermark">
+        <h1>REFHAN FAZRI HANDIANTO</h1>
+      </header>
+      <p class="informasi-singkat">Saya mahasiswa aktif program studi S1 Teknik Informatika Universitas Kuningan, Saya sangat tertarik dengan Jaringan Komputer dan Pemrograman Web.</p>
+      <article class="jumbotron">
+        <figure class="photo-profil">
+          <img src="Gambar/refhan fazri handianto.jpg" class="gambar-refhan" alt="REFHAN FAZRI HANDIANTO" />
+          <figcaption class="caption">
+            <p>Profesi <br />front end web developer</p>
+            <p>Tujuan <br />Meningkatkan keterampilan programming dengan teknologi terbaru</p>
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+    <!-- END JUMBOTRON -->
+
+    <!-- SECTION TENTANG SAYA -->
+    <section id="tentangSaya">
+      <h2 class="tentangSaya">TENTANG SAYA</h2>
+      <div class="biografi">
+        <p>
+          Saya mahasiswa aktif program studi S1 Teknik Informatika Universitas Kuningan, Saya sangat tertarik dengan Jaringan Komputer dan Pemrograman Web. Untuk keterampilan saya, dapat membuat struktur dasar HTML dan CSS sebagai Web
+          Design. Tujuan Karir saya ingin meningkatkan keterampilan programming sebagai Front End Web Developer dengan teknologi terbaru seperti Artificial Intelligence.
+        </p>
+      </div>
+      <table border="2" class="pendidikan">
+        <thead>
+          <th colspan="2"><h5 class="subjudul">PENDIDIKAN</h5></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023 - Sekarang</td>
+            <td>Universitas Kuningan</td>
+          </tr>
+          <tr>
+            <td>2020 - 2023</td>
+            <td>SMK Karya Nasional Kuningan</td>
+          </tr>
+          <tr>
+            <td>2017 - 2020</td>
+            <td>SMP Negeri 2 Cigugur</td>
+          </tr>
+          <tr>
+            <td>2011 - 2017</td>
+            <td>SD Negeri 2 Cileuleuy</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- END SECTION TENTANG SAYA -->
+
+    <!-- SECTION PROJECT -->
+    <section id="project">
+      <h2 class="project">PROJECT</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px">
+        <div class="col">
+          <div class="card h-100">
+            <img src="Gambar/Project1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">PROJECT 1</h5>
+              <p class="card-text">Membuat Landing Page Mengenai Pemasaran Atau Halaman Iklan Sederhana.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Gambar/Project2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">PROJECT 2</h5>
+              <p class="card-text">Membuat Web Biodata Sederhana Mengenai Profil Singkat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Gambar/Project3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">PROJECT 3</h5>
+              <p class="card-text">Membuat Aplikasi Sederhana Mengenai Sistem Manajemen Data Mahasiswa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION PROJECT -->
+
+    <!-- SECTION KONTAK -->
+    <section id="kontak">
+      <h2 class="kontak">KONTAK</h2>
+      <div class="container-kontak">
+        <form action="kontak.php" method="post" class="kontak">
+          <label for="nama" class="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap Anda" required />
+          <br />
+          <label for="email" class="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan Alamat Email Yang Aktif" required />
+          <br />
+          <label for="pesan" class="pesan">Pesan:</label>
+          <textarea id="pesan" name="pesan" placeholder="Masukkan Pesan Secara Singkat Dan Jelas" required></textarea>
+          <br />
+          <button type="submit">Submit</button>
+          <button type="reset">Batal</button>
+        </form>
+      </div>
+      <article class="container-sosmed">
+        <a href="https://wa.me/+6282129654756" class="kontak">
+          <img src="Gambar/whatsapp.png" class="gambar-sosmed" height="35px" width="35px" title="Klik Disini" />
+        </a>
+        <a href="https://instagram.com/refhann17_" class="kontak">
+          <img src="Gambar/instagram.png" class="gambar-sosmed" height="35px" width="35px" title="Klik Disini" />
+        </a>
+        <a href="https://www.facebook.com/refhan.cboedackneduchi?mibextid=ZbWKwL" class="kontak">
+          <img src="Gambar/facebook.png" class="gambar-sosmed" height="35px" width="35px" title="Klik Disini" />
+        </a>
+      </article>
+    </section>
+    <!-- END SECTION KONTAK -->
+
+    <!-- FOOTER -->
+    <footer>
+      <h5>&copy; REFHAN FAZRI HANDIANTO - FAKULTAS ILMU KOMPUTER | UNIKU 2024</h5>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>
